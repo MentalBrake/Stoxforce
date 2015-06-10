@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Stox Bank Details</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Stox_Support</letterhead>
+    <name>Stox Bank Details HTML</name>
+    <style>formalLetter</style>
+    <subject>Stox Bank Details</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for your inquiry regarding Stox Bank Details
+For more information you can follow this FAQs LINK
+Or
+Bank account for Stox:
+
+Piraeus Bank
+1 Spyrou Kyprianou Avenue
+1065 Nicosia,
+P.O. Box 25700
+1393 Nicosia
+Cyprus
+
+SWIFT: PIRBCY2N
+
+A/C: 1472330 (EUR)
+IBAN: CY63008001700000000001472330
+
+A/C: 1472346 (GBP)
+IBAN: CY19008001700000000001472346
+
+A/C: 1472351(USD)
+IBAN: CY78008001700000000001472351
+
+Please make sure that you
+1.	Use your full name as you have registered on your account
+2.	You scan the bank SWIFT receipt and send it to support@stox.com
+3.	Or you may upload from your account.
+
+
+We wish you all the best with your investments
+Stox Support Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Stox_Support</letterhead>
+    <name>Contact: Follow Up (SALES) HTML</name>
+    <style>formalLetter</style>
+    <subject>Follow up</subject>
+    <textOnly>Dear {!Contact.FirstName}, 
+
+It was a pleasure speaking with you today. 
+Stox is a dynamic new market leader that is focused on its clients satisfaction. 
+As discussed, i will schedule our appointment and I look forward to our next meeting. 
+
+Regards, {!User.FirstName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Exchange</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Exchanges</value>
+    </caseValues>
+    <fields>
+        <label><!-- Days In Year --></label>
+        <name>days_in_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settlement Days --></label>
+        <name>settlement_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trading Fee Strategy --></label>
+        <name>trading_fee_strategy__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

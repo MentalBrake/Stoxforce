@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Position Issues</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Stox_Support</letterhead>
+    <name>Position Issues HTML</name>
+    <style>formalLetter</style>
+    <subject>Position Issues</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for your inquiry regarding your positions
+
+For more information you can follow this FAQs LINK or
+
+If you have a specific position issue that cannot be resolved via the FAQs
+
+a.	You can “open a case” and upload your print screens in the case.
+b.	Or you can send the issue via email to support@stox.com
+Files can be .jpg, .png, .TIFF, .GIF
+
+Please make sure that you state:
+a.	Your position I.D.
+b.	The TIC name of the product
+c.	When the position was opened
+d.	A brief description of the problem you are having
+e.	Use the same email that you registered your Stox account
+f.	State your “Username”
+g.	In the title of the email you write “position issues”
+
+Please do not “code lock” your files as, we will be unable to open them.
+
+We wish you all the best with your investments
+Stox Support Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

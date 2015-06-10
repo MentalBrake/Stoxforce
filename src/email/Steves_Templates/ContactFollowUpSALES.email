@@ -1,0 +1,7 @@
+Dear {!Contact.FirstName},  
+
+It was a pleasure speaking with you today.  
+Stox is a dynamic new market leader that is focused on its clients satisfaction.
+As discussed, i will schedule our appointment and I look forward to our next meeting.  
+
+Regards,  {!User.FirstName}

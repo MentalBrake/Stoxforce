@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request for ID &amp; Utility Bill</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Stox_Support</letterhead>
+    <name>Documents Required (Both) HTML</name>
+    <style>formalLetter</style>
+    <subject>Request for ID &amp; Utility Bill</subject>
+    <textOnly>Dear Dear {!Contact.FirstName}, 
+
+In regards to your request to open an investment account with Stox. 
+
+Please provide a full, clear color copy of: 
+a.	A valid, in date, Government issued photographic Identification. 
+i.e. Passport, Full Driving License, National I.D. card. 
+b.	A valid, in date, utility bill with your name and residential address. That has been issued within the last 3 months. 
+
+Files can be uploaded from your Investment 
+a.	account via the “upload” facility or 
+b.	You can “open a case” and upload your documents in the case. 
+c.	Or you can send the documents via email to support@stox.com 
+Files can be .jpg, .png, .TIFF, .GIF 
+
+Please make sure that you 
+1.	Use the same email that you registered your Stox account 
+2.	State your “Username” 
+
+Please do not code lock your files as, we will be unable to open them. 
+
+All the best with your investments 
+Stox Support Team</textOnly>
+    <type>html</type>
+</EmailTemplate>
