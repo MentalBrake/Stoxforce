@@ -328,6 +328,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.newfield3000__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.not_working_in_us_finance__c</field>
         <readable>false</readable>
     </fieldPermissions>

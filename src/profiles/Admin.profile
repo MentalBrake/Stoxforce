@@ -328,6 +328,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.newfield3000__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.not_working_in_us_finance__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2456,7 +2461,7 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>EditActivatedOrders</name>
-    </userPermissions>    
+    </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>EditBrandTemplates</name>

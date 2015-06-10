@@ -1051,6 +1051,16 @@ High = 31 to 40</inlineHelpText>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>newfield3000__c</fullName>
+        <externalId>false</externalId>
+        <label>newfield3000</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>not_working_in_us_finance__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
