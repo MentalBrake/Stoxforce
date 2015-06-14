@@ -5,4 +5,5 @@
     <tab>Exchange__c</tab>
     <tab>Stock__c</tab>
     <tab>Transaction__c</tab>
+    <tab>st_account__c</tab>
 </CustomApplication>

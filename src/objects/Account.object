@@ -2163,7 +2163,7 @@ loadScript(backofficeUrl + &apos;/salesforce/scripts/init&apos;, function(){
      }
      else{
      var backofficeApi = stoxBackoffice(backofficeUrl);
-        backofficeApi.deposit(&apos;{!Account.stox_id__c}&apos;, &apos;{!Account.initial_deposit_currency__c}&apos;);
+        backofficeApi.deposit(&apos;{!Account.stox_id__c}&apos;);
      }
     }, function(err) {
        alert(&apos;Connection to backoffice failed&apos;);

@@ -2058,6 +2058,10 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>st_account__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>standard-Account</tab>
         <visibility>None</visibility>
     </tabSettings>

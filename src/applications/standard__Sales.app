@@ -13,4 +13,5 @@
     <tab>standard-Product2</tab>
     <tab>standard-Forecasting3</tab>
     <tab>Transaction__c</tab>
+    <tab>st_account__c</tab>
 </CustomApplication>

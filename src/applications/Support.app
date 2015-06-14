@@ -172,9 +172,13 @@
     <tab>standard-LiveChatVisitor</tab>
     <tab>standard-LiveAgentSession</tab>
     <tab>Transaction__c</tab>
+    <tab>st_account__c</tab>
     <workspaceMappings>
         <mapping>
             <tab>Transaction__c</tab>
+        </mapping>
+        <mapping>
+            <tab>st_account__c</tab>
         </mapping>
         <mapping>
             <tab>standard-LiveAgentSession</tab>

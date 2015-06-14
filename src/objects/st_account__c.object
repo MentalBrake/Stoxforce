@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stox Trading Account</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Trading Accounts</relationshipLabel>
+        <relationshipName>account_to_st_account</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>user_id__c</fullName>
+        <externalId>false</externalId>
+        <label>User Id</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Trading Account</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Trading Account Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Trading Accounts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>deposit</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Deposit</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var backofficeUrl = &apos;https://ib-backoffice.stox.com&apos;;
+
+function loadScript(url, callback, errCallback){
+var script = document.createElement(&quot;script&quot;)
+script.type = &quot;text/javascript&quot;;
+
+if (script.readyState){ //IE
+script.onreadystatechange = function(){
+if (script.readyState == &quot;loaded&quot; ||
+script.readyState == &quot;complete&quot;){
+script.onreadystatechange = null;
+callback();
+}
+};
+} else { //Others
+script.onload = function(){
+callback();
+};
+script.onerror = function(err) {
+errCallback(err);
+};
+}
+script.src = url;
+document.getElementsByTagName(&quot;head&quot;)[0].appendChild(script);
+}
+
+
+loadScript(backofficeUrl + &apos;/salesforce/scripts/init&apos;, function(){ 
+if(!&apos;{!st_account__c.user_id__c}&apos;){
+alert(&apos;no stox user id, try refreshing the page&apos;); 
+}
+else{
+var backofficeApi = stoxBackoffice(backofficeUrl);
+backofficeApi.deposit(&apos;{!st_account__c.user_id__c}&apos;, &apos;{!Account.initial_deposit_currency__c}&apos;);
+}
+}, function(err) {
+alert(&apos;Connection to backoffice failed&apos;);
+console.log(err);
+});</url>
+    </webLinks>
+</CustomObject>

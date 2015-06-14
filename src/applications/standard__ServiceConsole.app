@@ -165,9 +165,13 @@
     <tab>standard-Knowledge</tab>
     <tab>standard-LiveAgent</tab>
     <tab>Transaction__c</tab>
+    <tab>st_account__c</tab>
     <workspaceMappings>
         <mapping>
             <tab>Transaction__c</tab>
+        </mapping>
+        <mapping>
+            <tab>st_account__c</tab>
         </mapping>
         <mapping>
             <tab>standard-Account</tab>

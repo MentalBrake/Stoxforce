@@ -11,4 +11,5 @@
     <tab>standard-Chatter</tab>
     <tab>standard-File</tab>
     <tab>Transaction__c</tab>
+    <tab>st_account__c</tab>
 </CustomApplication>

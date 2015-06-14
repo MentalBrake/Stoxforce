@@ -3,4 +3,5 @@
     <defaultLandingTab>standard-home</defaultLandingTab>
     <label>Execution</label>
     <tab>Transaction__c</tab>
+    <tab>st_account__c</tab>
 </CustomApplication>

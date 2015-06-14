@@ -15,4 +15,5 @@
     <tab>standard-Lead</tab>
     <tab>standard-Opportunity</tab>
     <tab>Transaction__c</tab>
+    <tab>st_account__c</tab>
 </CustomApplication>
