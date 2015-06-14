@@ -388,6 +388,21 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>st_account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Stox Trading Account</description>
+        <externalId>false</externalId>
+        <label>Trading Account</label>
+        <referenceTo>st_account__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>transaction__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1053,7 +1068,7 @@
         <masterLabel>Update Request Status</masterLabel>
         <openType>onClickJavaScript</openType>
         <protected>false</protected>
-        <url>var backofficeUrl = &apos;https://ib-backoffice.stox.com&apos;;
+        <url>var backofficeUrl = &apos;https://backoffice.stox.com&apos;;
 
 function loadScript(url, callback, errCallback){
     var script = document.createElement(&quot;script&quot;)

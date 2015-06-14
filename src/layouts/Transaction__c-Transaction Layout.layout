@@ -8,10 +8,6 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Account__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
@@ -29,6 +25,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>request_id__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>st_account__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
@@ -62,9 +62,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <miniLayout>
-        <fields>Account__c</fields>
-    </miniLayout>
     <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>
         <fields>CASES.SUBJECT</fields>

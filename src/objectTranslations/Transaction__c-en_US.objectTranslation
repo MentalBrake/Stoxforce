@@ -9,17 +9,17 @@
         <value>Transactions</value>
     </caseValues>
     <fields>
-        <label><!-- Account --></label>
-        <name>Account__c</name>
-        <relationshipLabel><!-- Transactions --></relationshipLabel>
-    </fields>
-    <fields>
         <label><!-- Amount --></label>
         <name>amount__c</name>
     </fields>
     <fields>
         <label><!-- Request ID --></label>
         <name>request_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trading Account --></label>
+        <name>st_account__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Transaction Time --></label>

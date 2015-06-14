@@ -327,9 +327,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.newfield3000__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -724,6 +724,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.request_id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.st_account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1843,6 +1848,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Transaction__c.st_account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Transaction__c.transaction_time__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1854,6 +1864,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>User.is_backoffice_user__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>st_account__c.account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>st_account__c.user_id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
@@ -1987,6 +2007,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>st_account__c-Trading Account Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>

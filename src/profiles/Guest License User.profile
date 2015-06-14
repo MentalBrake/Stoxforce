@@ -728,6 +728,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.st_account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.transaction__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1843,6 +1848,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Transaction__c.st_account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Transaction__c.transaction_time__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1854,6 +1864,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>User.is_backoffice_user__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>st_account__c.account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>st_account__c.user_id__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <layoutAssignments>
@@ -1987,6 +2007,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>st_account__c-Trading Account Layout</layout>
     </layoutAssignments>
     <pageAccesses>
         <apexPage>a</apexPage>

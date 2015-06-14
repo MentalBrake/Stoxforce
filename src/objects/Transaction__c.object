@@ -54,19 +54,6 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Account__c</fullName>
-        <externalId>false</externalId>
-        <label>Account</label>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>Transactions</relationshipLabel>
-        <relationshipName>Transactions</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>amount__c</fullName>
         <externalId>false</externalId>
         <label>Amount</label>
@@ -86,6 +73,19 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>st_account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Stox Trading Account</description>
+        <externalId>false</externalId>
+        <label>Trading Account</label>
+        <referenceTo>st_account__c</referenceTo>
+        <relationshipLabel>Transactions</relationshipLabel>
+        <relationshipName>Transactions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>transaction_time__c</fullName>
@@ -121,5 +121,5 @@
     </nameField>
     <pluralLabel>Transactions</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
